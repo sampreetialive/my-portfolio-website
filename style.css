@@ -80,7 +80,8 @@ color:#D98C95;
 
 }
 
-/* HERO */
+/* ================= HERO ================= */
+
 
 .hero{
 
@@ -88,99 +89,38 @@ min-height:100vh;
 
 display:flex;
 
-justify-content:space-between;
+justify-content:center;
 
 align-items:center;
 
-padding:120px 8%;
+gap:80px;
+
+padding:120px 8% 80px;
 
 }
+
 
 .hero-text{
 
-width:55%;
+flex:1;
+
+max-width:650px;
 
 }
 
-.hero-text h3{
 
-font-size:24px;
+.hero-image{
 
-margin-bottom:10px;
-
-}
-
-.hero-text h1{
-
-font-size:68px;
-
-color:#D98C95;
-
-margin-bottom:10px;
-
-}
-
-.hero-text h2{
-
-font-size:28px;
-
-font-weight:500;
-
-margin-bottom:25px;
-
-}
-
-.hero-text p{
-
-font-size:18px;
-
-line-height:32px;
-
-margin-bottom:40px;
-
-}
-
-.buttons{
+flex:0 0 auto;
 
 display:flex;
 
-gap:20px;
+justify-content:center;
+
+align-items:center;
 
 }
 
-.btn{
-
-padding:15px 32px;
-
-background:#E8B4B8;
-
-color:#222;
-
-text-decoration:none;
-
-border-radius:50px;
-
-font-weight:600;
-
-transition:.3s;
-
-}
-
-.btn:hover{
-
-background:#D98C95;
-
-transform:translateY(-4px);
-
-}
-
-.secondary{
-
-background:white;
-
-border:2px solid #E8B4B8;
-
-}
 
 .hero-image img{
 
@@ -196,8 +136,9 @@ border:8px solid #F6D6D6;
 
 box-shadow:0 15px 35px rgba(0,0,0,.15);
 
-}
+animation:float 3s ease-in-out infinite;
 
+}
 /* ================= ABOUT + EDUCATION ================= */
 
 
@@ -718,7 +659,7 @@ transform:translateY(0);
 /* ================= MOBILE RESPONSIVE ================= */
 
 
-@media(max-width:900px){
+@media(max-width:1000px){
 
 
 header{
@@ -745,7 +686,7 @@ justify-content:center;
 
 nav a{
 
-margin:10px;
+margin:8px;
 
 font-size:14px;
 
@@ -755,11 +696,13 @@ font-size:14px;
 
 .hero{
 
-flex-direction:column-reverse;
+flex-direction:column;
 
 text-align:center;
 
-padding-top:150px;
+padding-top:170px;
+
+gap:40px;
 
 }
 
@@ -767,7 +710,7 @@ padding-top:150px;
 
 .hero-text{
 
-width:100%;
+max-width:100%;
 
 }
 
@@ -795,8 +738,6 @@ width:260px;
 
 height:260px;
 
-margin-bottom:40px;
-
 }
 
 
@@ -811,13 +752,6 @@ flex-wrap:wrap;
 
 
 
-.section{
-
-padding:60px 5%;
-
-}
-
-
 .project-card,
 .certificate-card,
 .contact-card{
@@ -826,7 +760,11 @@ width:100%;
 
 }
 
+.hero-text p{
 
+max-width:600px;
+
+}
 }
 
 /* ================= PREMIUM PROJECT CARDS ================= */
