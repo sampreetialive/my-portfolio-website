@@ -1072,4 +1072,93 @@ background:#F6D6D6;
 
 }
 
+/* NAVIGATION EFFECT */
 
+
+nav a{
+
+position:relative;
+
+}
+
+
+nav a::after{
+
+content:"";
+
+position:absolute;
+
+width:0;
+
+height:2px;
+
+bottom:-6px;
+
+left:0;
+
+background:#D98C95;
+
+transition:.3s;
+
+}
+
+
+nav a:hover::after{
+
+width:100%;
+
+}
+
+/* BUTTON GLOW */
+
+
+.btn{
+
+box-shadow:0 8px 20px rgba(232,180,184,.35);
+
+}
+
+
+.btn:hover{
+
+box-shadow:0 12px 30px rgba(217,140,149,.45);
+
+}
+
+/* CARD LIFE EFFECT */
+
+
+.project-card,
+.certificate-card,
+.contact-card,
+.about-card,
+.education-card{
+
+animation:cardFloat 5s ease-in-out infinite;
+
+}
+
+
+@keyframes cardFloat{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+
+50%{
+
+transform:translateY(-5px);
+
+}
+
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
