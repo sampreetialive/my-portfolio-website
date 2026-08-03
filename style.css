@@ -1,128 +1,199 @@
+/* -------------------- */
+
 *{
+
 margin:0;
+
 padding:0;
+
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+
+font-family:'Poppins',sans-serif;
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
 }
 
 body{
 
-background:#edf2fb;
+background:#FAF6F0;
 
-color:#333;
+color:#222;
 
 }
+
+/* HEADER */
 
 header{
 
-background:#1d3557;
+position:fixed;
 
-color:white;
+top:0;
 
-text-align:center;
+width:100%;
 
-padding:60px;
+display:flex;
 
-}
+justify-content:space-between;
 
-header h1{
+align-items:center;
 
-font-size:45px;
+padding:22px 8%;
 
-}
+background:#FAF6F0;
 
-header p{
+box-shadow:0 4px 20px rgba(0,0,0,.05);
 
-margin-top:10px;
-
-font-size:20px;
+z-index:1000;
 
 }
 
-nav{
+.logo{
 
-background:#457b9d;
+font-size:28px;
 
-padding:15px;
-
-text-align:center;
+font-weight:700;
 
 }
 
 nav a{
 
-color:white;
-
 text-decoration:none;
 
-margin:25px;
+color:#222;
 
-font-size:18px;
+margin-left:28px;
 
-font-weight:bold;
+font-weight:500;
+
+transition:.3s;
 
 }
 
 nav a:hover{
 
-color:yellow;
+color:#D98C95;
 
 }
 
-section{
+/* HERO */
 
-width:80%;
+.hero{
 
-margin:40px auto;
+min-height:100vh;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:120px 8%;
+
+}
+
+.hero-text{
+
+width:55%;
+
+}
+
+.hero-text h3{
+
+font-size:24px;
+
+margin-bottom:10px;
+
+}
+
+.hero-text h1{
+
+font-size:68px;
+
+color:#D98C95;
+
+margin-bottom:10px;
+
+}
+
+.hero-text h2{
+
+font-size:28px;
+
+font-weight:500;
+
+margin-bottom:25px;
+
+}
+
+.hero-text p{
+
+font-size:18px;
+
+line-height:32px;
+
+margin-bottom:40px;
+
+}
+
+.buttons{
+
+display:flex;
+
+gap:20px;
+
+}
+
+.btn{
+
+padding:15px 32px;
+
+background:#E8B4B8;
+
+color:#222;
+
+text-decoration:none;
+
+border-radius:50px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#D98C95;
+
+transform:translateY(-4px);
+
+}
+
+.secondary{
 
 background:white;
 
-padding:30px;
-
-border-radius:12px;
-
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
+border:2px solid #E8B4B8;
 
 }
 
-h2{
+.hero-image img{
 
-color:#1d3557;
+width:360px;
 
-margin-bottom:15px;
+height:360px;
 
-}
+object-fit:cover;
 
-ul{
+border-radius:50%;
 
-margin-left:20px;
+border:8px solid #F6D6D6;
 
-}
-
-.card{
-
-margin-top:20px;
-
-padding:20px;
-
-background:#f8f9fa;
-
-border-left:6px solid #457b9d;
-
-border-radius:8px;
-
-}
-
-footer{
-
-background:#1d3557;
-
-color:white;
-
-text-align:center;
-
-padding:20px;
-
-margin-top:40px;
+box-shadow:0 15px 35px rgba(0,0,0,.15);
 
 }
