@@ -883,3 +883,44 @@ font-weight:600;
 margin-top:10px;
 
 }
+
+/* ================= PREMIUM CERTIFICATES ================= */
+
+
+.certificate-icon{
+
+font-size:45px;
+
+margin-bottom:20px;
+
+}
+
+
+
+.certificate-card{
+
+border-top:6px solid #F6D6D6;
+
+}
+
+
+
+.certificate-card h3{
+
+min-height:70px;
+
+display:flex;
+
+align-items:center;
+
+}
+
+
+
+.certificate-card a{
+
+margin-top:10px;
+
+display:inline-block;
+
+}
