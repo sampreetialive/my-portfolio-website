@@ -197,3 +197,71 @@ border:8px solid #F6D6D6;
 box-shadow:0 15px 35px rgba(0,0,0,.15);
 
 }
+
+/* ================= ABOUT + EDUCATION ================= */
+
+
+.section{
+
+padding:80px 8%;
+
+}
+
+
+.section-title{
+
+text-align:center;
+
+margin-bottom:40px;
+
+}
+
+
+.section-title h2{
+
+font-size:40px;
+
+color:#D98C95;
+
+}
+
+
+
+.about-card,
+.education-card{
+
+background:white;
+
+padding:35px;
+
+border-radius:25px;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+line-height:32px;
+
+font-size:17px;
+
+transition:.3s;
+
+}
+
+
+.about-card:hover,
+.education-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+
+
+.education-card h3{
+
+font-size:28px;
+
+color:#D98C95;
+
+margin-bottom:15px;
+
+}
